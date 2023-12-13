@@ -51,7 +51,7 @@ Use the token to access the Endpoints.
   - Calculate the on-time delivery rate for completed orders.
  
   ## API Endpoints
-**  Vendors**
+**Vendors**
 
 1.Add/Get Vendors
 ```bash
