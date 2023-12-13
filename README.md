@@ -53,53 +53,54 @@ Use the token to access the Endpoints.
   ## API Endpoints
 **  Vendors**
 1.Add/Get Vendors
+```bash
 Endpoint: /api/vendors/
 Method: GET (Retrieve all vendors), POST (Add a new vendor)
 Authentication: Required
+'''
 
 2.Get/Update/Delete Vendor
+```bash
 Endpoint: /api/vendors/<vendor_id>/
 Method: GET (Retrieve a specific vendor), POST (Update a specific vendor), DELETE (Delete a specific vendor)
 Authentication: Required
 Parameters: <vendor_id> (string, required): ID of the vendor to retrieve, update, or delete
+```
 
 **Purchase Orders**
 1.Add/Get Purchase Orders
+```bash
 Endpoint: /api/purchase_orders/
 Method: GET (Retrieve all purchase orders), POST (Add a new purchase order)
 Authentication: Required
-
+```
 
 2.Get/Update/Delete Purchase Order
+```bash
 Endpoint: /api/purchase_orders/<po_id>/
 Method: GET (Retrieve a specific purchase order), POST (Update a specific purchase order), DELETE (Delete a specific purchase order)
 Authentication: Required
 Parameters: <po_id> (string, required): ID of the purchase order to retrieve, update, or delete
+```
 
 **Historical Performance**
 Get Purchase Orders
 Retrieve all purchase orders or add a new purchase order.
-
-URL:
 ``` bash
 GET /api/purchase_orders/
-```
 Method: GET (Retrieve all historical Performance of the Vendor)
+Authentication : Required
+```
 
-Acknowledge Purchase Order
+**Acknowledge Purchase Order**
+Parameters:
+po_id (string, required): Purchase Order ID, uniquely identifying the purchase order to be acknowledged.
+acknowledgment_date (datetime, required): The date and time when the vendor acknowledges the purchase order.
 ```bash
 Endpoint: /api/purchase_orders/<str:po_id>/acknowledge/
-```
 Method: POST
-
 Authentication: Required
-
-Parameters:
-
-po_id (string, required): Purchase Order ID, uniquely identifying the purchase order to be acknowledged.
-Request Body:
-
-acknowledgment_date (datetime, required): The date and time when the vendor acknowledges the purchase order.
+```
 Example Request:
 
 ```bash
