@@ -52,12 +52,13 @@ Use the token to access the Endpoints.
  
   ## API Endpoints
 **  Vendors**
+
 1.Add/Get Vendors
 ```bash
 Endpoint: /api/vendors/
 Method: GET (Retrieve all vendors), POST (Add a new vendor)
 Authentication: Required
-'''
+```
 
 2.Get/Update/Delete Vendor
 ```bash
