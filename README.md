@@ -34,7 +34,7 @@ Use the token to access the Endpoints. Before that create a User in the shell :
 >>> user = User.objects.create_user('username', 'sample@gmail.com', 'password')               
 >>> exit()
 
-#after this (if using POSTMAN send use the username and password to generate the token for the endoints.
+#after this (if using POSTMAN send use the username and password to generate the token for the endpoints.
 {
     "username" : "username",
     "password" : "password"
