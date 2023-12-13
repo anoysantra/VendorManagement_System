@@ -81,8 +81,9 @@ Get Purchase Orders
 Retrieve all purchase orders or add a new purchase order.
 
 URL:
-
+``` bash
 GET /api/purchase_orders/
+```
 Method: GET (Retrieve all historical Performance of the Vendor)
 
 Acknowledge Purchase Order
@@ -101,9 +102,9 @@ Request Body:
 acknowledgment_date (datetime, required): The date and time when the vendor acknowledges the purchase order.
 Example Request:
 
-bash
-Copy code
+```bash
 curl -X POST http://your-api-domain/api/purchase_orders/<your-po-id>/acknowledge/ -d "acknowledgment_date=<acknowledgment-date>"
+```
 Replace <your-po-id> with the actual Purchase Order ID and <acknowledgment-date> with the date and time of acknowledgment.
 
 
