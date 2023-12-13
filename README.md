@@ -69,6 +69,7 @@ Parameters: <vendor_id> (string, required): ID of the vendor to retrieve, update
 ```
 
 **Purchase Orders**
+
 1.Add/Get Purchase Orders
 ```bash
 Endpoint: /api/purchase_orders/
@@ -166,7 +167,9 @@ Starts the Django development server, allowing you to preview and interact with 
 
 Feel free to replace [env_name] with your desired environment name.
 
+## Additions
 
+The Estimated Delivery Date has been considered to be 7 days after the Order Date. Based on that the delivery performance has been calculated. Feel free to Reach Out to be in case of any query.
 
 
 
