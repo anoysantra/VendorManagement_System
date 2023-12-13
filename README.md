@@ -27,7 +27,20 @@ The Vendor Management System is a Django-based web application designed to strea
   curl -X POST http://your-api-domain/api-token-auth/ -d "username=<your-username>&password=<your-password>"
     ```
 A token will be generated
-Use the token to access the Endpoints.
+Use the token to access the Endpoints. Before that create a User in the shell :
+
+```python copy
+>>>from django.contrib.auth.models import User
+>>> user = User.objects.create_user('username', 'sample@gmail.com', 'password')               
+>>> exit()
+
+//after this (if using POSTMAN send use the username and password to generate the token for the endoints.
+{
+    "username" : "username",
+    "password" : "password"
+}
+
+```
 
 - ## Requirements
 
