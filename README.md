@@ -29,12 +29,14 @@ The Vendor Management System is a Django-based web application designed to strea
 A token will be generated
 Use the token to access the Endpoints.
 
-## Requirements
+- ## Requirements
 
-- Python 3.x
-- Django
-- Django REST framework
-- ...
+- **Python 3.x**
+- **Django 4.2.7**: A high-level Python web framework for building web applications.
+- **Django REST framework 3.14.0**: A powerful and flexible toolkit for building Web APIs in Django.
+- **pytz 2023.3.post1**: World timezone definitions for Python.
+- **sqlparse 0.4.4**: A non-validating SQL parser for Python.
+- **tzdata 2023.3**: Time zone database for Python.
 
 ## Performance Metrics Algorithm
 
